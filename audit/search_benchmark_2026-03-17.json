@@ -1,0 +1,140 @@
+{
+    "created_at": "2026-03-17T23:28:56+00:00",
+    "driver": "sqlite",
+    "iterations": 40,
+    "scale": 250,
+    "dataset_rows": 5000,
+    "base_rows": 20,
+    "query_terms": [
+        "facturatie",
+        "peppol",
+        "klantenportaal",
+        "boekhoudprogramma",
+        "coda",
+        "dms",
+        "webinar",
+        "fakturatie"
+    ],
+    "strategies": [
+        {
+            "label": "LIKE",
+            "queries": [
+                {
+                    "term": "facturatie",
+                    "avg_ms": 0.602,
+                    "p95_ms": 0.853,
+                    "hits": 500
+                },
+                {
+                    "term": "peppol",
+                    "avg_ms": 0.575,
+                    "p95_ms": 0.831,
+                    "hits": 750
+                },
+                {
+                    "term": "klantenportaal",
+                    "avg_ms": 0.624,
+                    "p95_ms": 0.974,
+                    "hits": 1250
+                },
+                {
+                    "term": "boekhoudprogramma",
+                    "avg_ms": 0.847,
+                    "p95_ms": 1.483,
+                    "hits": 1250
+                },
+                {
+                    "term": "coda",
+                    "avg_ms": 0.878,
+                    "p95_ms": 1.375,
+                    "hits": 750
+                },
+                {
+                    "term": "dms",
+                    "avg_ms": 0.84,
+                    "p95_ms": 1.808,
+                    "hits": 1000
+                },
+                {
+                    "term": "webinar",
+                    "avg_ms": 0.77,
+                    "p95_ms": 1.408,
+                    "hits": 250
+                },
+                {
+                    "term": "fakturatie",
+                    "avg_ms": 1.038,
+                    "p95_ms": 1.658,
+                    "hits": 0
+                }
+            ],
+            "overall": {
+                "avg_ms": 0.772,
+                "p95_ms": 1.438
+            }
+        },
+        {
+            "label": "FTS",
+            "queries": [
+                {
+                    "term": "facturatie",
+                    "avg_ms": 0.042,
+                    "p95_ms": 0.045,
+                    "hits": 500
+                },
+                {
+                    "term": "peppol",
+                    "avg_ms": 0.047,
+                    "p95_ms": 0.051,
+                    "hits": 750
+                },
+                {
+                    "term": "klantenportaal",
+                    "avg_ms": 0.064,
+                    "p95_ms": 0.071,
+                    "hits": 1250
+                },
+                {
+                    "term": "boekhoudprogramma",
+                    "avg_ms": 0.065,
+                    "p95_ms": 0.077,
+                    "hits": 1250
+                },
+                {
+                    "term": "coda",
+                    "avg_ms": 0.046,
+                    "p95_ms": 0.055,
+                    "hits": 750
+                },
+                {
+                    "term": "dms",
+                    "avg_ms": 0.052,
+                    "p95_ms": 0.057,
+                    "hits": 1000
+                },
+                {
+                    "term": "webinar",
+                    "avg_ms": 0.029,
+                    "p95_ms": 0.029,
+                    "hits": 250
+                },
+                {
+                    "term": "fakturatie",
+                    "avg_ms": 0.021,
+                    "p95_ms": 0.022,
+                    "hits": 0
+                }
+            ],
+            "overall": {
+                "avg_ms": 0.046,
+                "p95_ms": 0.068
+            }
+        }
+    ],
+    "notes": [
+        "Benchmark uitgevoerd op SQLite met FTS5 MATCH en LIKE.",
+        "Trigram tolerance is niet native in SQLite en is dus niet gemeten.",
+        "Resultaten zijn geschikt voor relatieve vergelijking, niet als absolute productie-SLA."
+    ],
+    "recommendation": "Kies FTS als primaire strategie voor de MVP search endpoint. Voor productie op PostgreSQL: combineer FTS met pg_trgm voor typo tolerantie."
+}

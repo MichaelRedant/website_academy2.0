@@ -1,0 +1,46 @@
+{
+  "name": "website_academy2.0",
+  "version": "1.0.0",
+  "description": "Local development workspace for Academy 2.0 migration",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "audit:refresh": "python scripts/audit_sitemaps.py",
+    "cwv:probe": "node scripts/cwv_probe.mjs",
+    "qa:cross-browser": "playwright test tests/e2e/cross-browser-smoke.spec.mjs --project=desktop-chromium --project=desktop-firefox --project=desktop-webkit",
+    "qa:mobile": "playwright test tests/e2e/mobile-smoke.spec.mjs --project=mobile-chromium --project=mobile-safari",
+    "qa:accessibility": "playwright test tests/e2e/accessibility-smoke.spec.mjs --project=desktop-chromium",
+    "qa:performance": "powershell -ExecutionPolicy Bypass -File scripts/performance_smoke.ps1",
+    "qa:security": "powershell -ExecutionPolicy Bypass -File scripts/security_smoke.ps1",
+    "qa:nonfunctional": "npm run qa:cross-browser && npm run qa:mobile && npm run qa:performance && npm run qa:security && npm run qa:accessibility",
+    "qa:uat:tech-dryrun": "powershell -ExecutionPolicy Bypass -File scripts/uat_tech_dryrun.ps1",
+    "monolith:composer": "powershell -ExecutionPolicy Bypass -File scripts/composer.ps1",
+    "monolith:artisan": "powershell -ExecutionPolicy Bypass -File scripts/artisan.ps1",
+    "monolith:setup": "powershell -ExecutionPolicy Bypass -File scripts/setup_monolith.ps1",
+    "monolith:serve": "npm run monolith:artisan -- serve --host=127.0.0.1 --port=8000",
+    "monolith:test": "npm run monolith:artisan -- test",
+    "monolith:dev": "npm --prefix monolith run dev",
+    "monolith:build": "npm --prefix monolith run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelRedant/website_academy2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelRedant/website_academy2.0/issues"
+  },
+  "homepage": "https://github.com/MichaelRedant/website_academy2.0#readme",
+  "devDependencies": {
+    "playwright": "^1.58.2",
+    "vite": "^8.0.0",
+    "vitest": "^4.1.0"
+  }
+}

@@ -1,0 +1,95 @@
+{
+    "created_at": "2026-03-18T00:52:51+01:00",
+    "source_file": "C:\\Users\\michael.redant\\OneDrive - dekimo.com\\Apps\\website_academy2.0\\monolith\\import/templates/legacy_taxonomy_template.csv",
+    "write_normalized": true,
+    "normalized_output_path": "C:\\Users\\michael.redant\\OneDrive - dekimo.com\\Apps\\website_academy2.0\\monolith\\data/import\\legacy_taxonomy.normalized.php",
+    "total_rows": 21,
+    "valid_rows": 21,
+    "error_count": 0,
+    "errors": [],
+    "counts_by_type": {
+        "course_category": 5,
+        "lesson_category": 16
+    },
+    "counts_by_domain": {
+        "Boekhoudprogramma": 8,
+        "Klantenportaal": 6,
+        "Nieuw": 2,
+        "global": 5
+    },
+    "sample_rows": [
+        {
+            "entity_type": "course_category",
+            "domain": "global",
+            "parent_slug": null,
+            "slug": "ontdek",
+            "label": "Ontdek",
+            "legacy_ref": "manual",
+            "active": true
+        },
+        {
+            "entity_type": "course_category",
+            "domain": "global",
+            "parent_slug": null,
+            "slug": "klantenportaal",
+            "label": "Klantenportaal",
+            "legacy_ref": "manual",
+            "active": true
+        },
+        {
+            "entity_type": "course_category",
+            "domain": "global",
+            "parent_slug": null,
+            "slug": "boekhoudprogramma",
+            "label": "Boekhoudprogramma",
+            "legacy_ref": "manual",
+            "active": true
+        },
+        {
+            "entity_type": "course_category",
+            "domain": "global",
+            "parent_slug": null,
+            "slug": "facturatie",
+            "label": "Facturatie",
+            "legacy_ref": "manual",
+            "active": true
+        },
+        {
+            "entity_type": "course_category",
+            "domain": "global",
+            "parent_slug": null,
+            "slug": "nieuw",
+            "label": "Nieuw",
+            "legacy_ref": "manual",
+            "active": true
+        },
+        {
+            "entity_type": "lesson_category",
+            "domain": "Klantenportaal",
+            "parent_slug": "klantenportaal",
+            "slug": "introductie",
+            "label": "Introductie",
+            "legacy_ref": "manual",
+            "active": true
+        },
+        {
+            "entity_type": "lesson_category",
+            "domain": "Klantenportaal",
+            "parent_slug": "klantenportaal",
+            "slug": "starten-met-het-klantenportaal",
+            "label": "Starten met het klantenportaal",
+            "legacy_ref": "manual",
+            "active": true
+        },
+        {
+            "entity_type": "lesson_category",
+            "domain": "Klantenportaal",
+            "parent_slug": "klantenportaal",
+            "slug": "aanleveren-van-documenten",
+            "label": "Aanleveren van documenten",
+            "legacy_ref": "manual",
+            "active": true
+        }
+    ],
+    "recommendation": "Template is valide. Start T-012 met seeders op basis van data/import/legacy_taxonomy.normalized.php."
+}

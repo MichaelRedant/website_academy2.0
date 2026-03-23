@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-03-17T13:47:10.864Z",
+  "rows": [
+    {
+      "url": "https://academy.octopus.be/nl/",
+      "lcp_ms": 3176,
+      "cls": 0.0031,
+      "fcp_ms": 3160,
+      "ttfb_ms": 2480.1,
+      "dom_content_loaded_ms": 3072.6,
+      "load_ms": 3264.2,
+      "inp_ms": null,
+      "notes": "INP not measured in this automated non-interactive run."
+    },
+    {
+      "url": "https://academy.octopus.be/nl/cursussen/",
+      "lcp_ms": 3416,
+      "cls": 0.0087,
+      "fcp_ms": 3416,
+      "ttfb_ms": 2999.5,
+      "dom_content_loaded_ms": 3071.5,
+      "load_ms": 3433.6,
+      "inp_ms": null,
+      "notes": "INP not measured in this automated non-interactive run."
+    },
+    {
+      "url": "https://academy.octopus.be/nl/how-tos/",
+      "lcp_ms": 2228,
+      "cls": 0.0066,
+      "fcp_ms": 2228,
+      "ttfb_ms": 1835.8,
+      "dom_content_loaded_ms": 2228.9,
+      "load_ms": 2298.7,
+      "inp_ms": null,
+      "notes": "INP not measured in this automated non-interactive run."
+    },
+    {
+      "url": "https://academy.octopus.be/nl/my-account/",
+      "lcp_ms": 1988,
+      "cls": 0,
+      "fcp_ms": 1988,
+      "ttfb_ms": 1624.6,
+      "dom_content_loaded_ms": 1976.9,
+      "load_ms": 2306.9,
+      "inp_ms": null,
+      "notes": "INP not measured in this automated non-interactive run."
+    }
+  ]
+}

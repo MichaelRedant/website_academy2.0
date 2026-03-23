@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-03-19T12:23:06.224Z",
+  "baseUrl": "http://127.0.0.1:8000",
+  "warmup": true,
+  "thresholds": {
+    "fcpMs": 2000,
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "ttfbMs": 800,
+    "domContentLoadedMs": 2500,
+    "loadMs": 5000
+  },
+  "rows": [
+    {
+      "path": "/",
+      "fcpMs": 300,
+      "lcpMs": 300,
+      "cls": 0,
+      "ttfbMs": 254.3,
+      "domContentLoadedMs": 274.5,
+      "loadMs": 276.2,
+      "checks": {
+        "fcpOk": true,
+        "lcpOk": true,
+        "clsOk": true,
+        "ttfbOk": true,
+        "domContentLoadedOk": true,
+        "loadOk": true
+      }
+    },
+    {
+      "path": "/cursussen",
+      "fcpMs": 316,
+      "lcpMs": 316,
+      "cls": 0,
+      "ttfbMs": 285.5,
+      "domContentLoadedMs": 311.2,
+      "loadMs": 316.5,
+      "checks": {
+        "fcpOk": true,
+        "lcpOk": true,
+        "clsOk": true,
+        "ttfbOk": true,
+        "domContentLoadedOk": true,
+        "loadOk": true
+      }
+    },
+    {
+      "path": "/lessen",
+      "fcpMs": 300,
+      "lcpMs": 300,
+      "cls": 0,
+      "ttfbMs": 249.6,
+      "domContentLoadedMs": 278.6,
+      "loadMs": 291.2,
+      "checks": {
+        "fcpOk": true,
+        "lcpOk": true,
+        "clsOk": true,
+        "ttfbOk": true,
+        "domContentLoadedOk": true,
+        "loadOk": true
+      }
+    },
+    {
+      "path": "/certificaat-verificatie",
+      "fcpMs": 280,
+      "lcpMs": 280,
+      "cls": 0,
+      "ttfbMs": 234.1,
+      "domContentLoadedMs": 255.8,
+      "loadMs": 257.7,
+      "checks": {
+        "fcpOk": true,
+        "lcpOk": true,
+        "clsOk": true,
+        "ttfbOk": true,
+        "domContentLoadedOk": true,
+        "loadOk": true
+      }
+    }
+  ]
+}

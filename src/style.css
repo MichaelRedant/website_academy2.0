@@ -1,0 +1,69 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #102230;
+  background: linear-gradient(140deg, #f3f8ff, #e7eff7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero h1 {
+  margin: 0.3rem 0 0.8rem;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  margin: 0;
+  color: #215c8a;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0 0 1.2rem;
+  color: #2d4a61;
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 14px;
+  background: #ffffffd9;
+  border: 1px solid #cde0ef;
+  box-shadow: 0 8px 18px #2a5d8310;
+}
+
+.card h2 {
+  margin-top: 0.2rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+code {
+  background: #ecf3f9;
+  padding: 0.1rem 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #d4e5f1;
+}
+
+.muted {
+  color: #587086;
+}

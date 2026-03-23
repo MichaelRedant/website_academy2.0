@@ -1,0 +1,4 @@
+old_url,new_url,status,note
+https://academy.octopus.be/nl/elementor-6522/,,review,Likely test/technical page. Consider noindex or removal.
+https://academy.octopus.be/nl/test-event_hub/,,review,Likely test/technical page. Consider noindex or removal.
+https://academy.octopus.be/nl/home/,https://academy.octopus.be/nl/,301,Candidate consolidation to main language root.

@@ -1,0 +1,11 @@
+# Temporary fetch/scrape artifacts
+tmp_*
+
+# Generated heavy raw sitemap dumps (regenerable)
+audit/raw_sitemaps/
+
+# Node / frontend build artifacts
+node_modules/
+dist/
+coverage/
+.tmp/
