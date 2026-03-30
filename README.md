@@ -2,6 +2,20 @@
 
 Lokale sandbox om de migratie van WordPress naar custom code stap voor stap te testen.
 
+## Belangrijke uitzondering binnen deze repo
+
+Deze map volgt niet dezelfde workflow als de meeste WordPress- en Elementor-assets elders in deze repository.
+
+Academy 2.0 is een volledig geprogrammeerd project en moet behandeld worden als gewone broncode, niet als copy-paste website-assets.
+
+Dat betekent:
+
+- fouten en warnings niet standaard negeren
+- structurele problemen wel oplossen wanneer nodig
+- tests, build en code-quality checks serieus nemen
+- de algemene copy-paste uitzondering uit andere website-mappen hier niet toepassen
+
+
 ## Snel starten
 
 ```bash
@@ -63,6 +77,9 @@ Daarna kan je testen met:
 - `npm run monolith:artisan -- academy:benchmark-search` - search benchmark rapport genereren
 - `npm run monolith:artisan -- academy:import-taxonomy --write` - SPK-03 taxonomy import valideren en normalized seed input genereren
 - `npm run monolith:artisan -- academy:import-content` - legacy cursussen + lessen importeren naar lokale DB (idempotent)
+- `npm run monolith:artisan -- academy:import-content-fr` - best-effort FR vertalingen importeren vanaf legacy `/fr` URLs + missing-data rapport maken
+- `npm run monolith:artisan -- academy:import-users` - legacy users uit JSON importeren zonder e-mails te versturen (idempotent)
+- `npm run monolith:artisan -- academy:ensure-admin` - admin account aanmaken/updaten (ook bruikbaar op staging/prod)
 - `npm run monolith:artisan -- db:seed --class=RolesAndPermissionsSeeder` - rollen/permissies opnieuw seeden
 - `npm run monolith:artisan -- db:seed --class=TaxonomySeeder` - taxonomy seed apart opnieuw draaien
 
@@ -76,6 +93,15 @@ Optionele flags:
 
 - `--reset-orders` herzet cursus- en lessenvolgorde volgens brondata.
 - `--prune` verwijdert lokale cursussen/lessen die niet in de brondata staan.
+- FR import flags:
+  - `--report-only` schrijft geen vertalingen weg, enkel scan + rapport
+  - `--limit=<n>` beperkt scan/import voor snelle dry-runs
+  - `--timeout=<sec>` timeout per legacy FR request
+
+FR import rapportbestanden worden geschreven naar `planning/`:
+
+- `T_FR5_LEGACY_FR_IMPORT_REPORT_<timestamp>.md`
+- `T_FR5_LEGACY_FR_IMPORT_REPORT_<timestamp>.json`
 
 Extra:
 
@@ -203,7 +229,9 @@ Routebescherming (Sprint 2 basis):
   - `/admin/taxonomie/{taxonomyTerm}/bewerken` (edit)
   - `/admin/taxonomie/{taxonomyTerm}/deactiveren` (deactivate)
   - `/admin/taxonomie/{taxonomyTerm}/activeren` (activate)
-  - `/admin/gebruikers-rollen` (gebruikersoverzicht met zoek/filter en rolbeheer)
+- `/admin/gebruikers-rollen` (gebruikersoverzicht met zoek/filter en rolbeheer)
+  - `/admin/gebruikers-rollen` (`POST`) nieuwe gebruiker aanmaken met rol
+  - `/admin/gebruikers-rollen/rollen/{role}` (`PUT`) permissies per rol beheren
   - `/admin/gebruikers-rollen/{user}` (rol wijzigen via `PUT`, enkel voor gebruikers met `user.manage_roles`)
 - In `admin/cursussen/{course}/bewerken` kan je nu ook:
   - lessen bundelen door bestaande lessen uit andere cursussen te verplaatsen,
@@ -236,6 +264,8 @@ Lokale admin-login (dev/test):
   - `ACADEMY_ADMIN_NAME`
   - `ACADEMY_ADMIN_EMAIL`
   - `ACADEMY_ADMIN_PASSWORD`
+- Voor staging/prod maak of reset je admin expliciet met:
+  - `php artisan academy:ensure-admin`
 
 ## Prerequisite check (Sprint 1 uitvoering)
 

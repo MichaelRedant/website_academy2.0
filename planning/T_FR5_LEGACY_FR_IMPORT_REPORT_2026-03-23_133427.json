@@ -1,0 +1,59 @@
+{
+    "generated_at": "2026-03-23T13:34:27+00:00",
+    "mode": "report-only",
+    "write_enabled": false,
+    "timeout_seconds": 8,
+    "limit": 1,
+    "counts": {
+        "courses_scanned": 1,
+        "courses_fetched": 1,
+        "courses_imported": 0,
+        "lessons_scanned": 1,
+        "lessons_fetched": 1,
+        "lessons_imported": 0,
+        "missing_items": 1
+    },
+    "inventory": {
+        "courses": [
+            {
+                "nl_slug": "coda",
+                "nl_url": "https://academy.octopus.be/nl/Cursussen/coda/",
+                "fr_url": "https://academy.octopus.be/fr/Cursussen/coda/",
+                "http_status": 200,
+                "ok": true,
+                "title": "Titre FR",
+                "slug": "coda",
+                "summary": "Contenu FR",
+                "imported": false,
+                "course_id": 1
+            }
+        ],
+        "lessons": [
+            {
+                "nl_course_slug": "lijsten-in-octopus",
+                "nl_lesson_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+                "nl_url": "https://academy.octopus.be/nl/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+                "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+                "http_status": 200,
+                "ok": true,
+                "title": "Titre FR",
+                "slug": "aangiftes-btw-btw-listing-en-ic-listing",
+                "video_url": null,
+                "imported": false,
+                "lesson_id": 48
+            }
+        ]
+    },
+    "missing": [
+        {
+            "type": "lesson",
+            "nl_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+            "reason": "FR videolink niet gevonden (best effort)."
+        }
+    ],
+    "paths": {
+        "json": "",
+        "markdown": ""
+    }
+}

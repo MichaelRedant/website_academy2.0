@@ -1,4 +1,4 @@
-# Architectuurbesluit C
+# Architectuurbesluit C 
 
 - Datum: `2026-03-17`
 - Status: bevestigd

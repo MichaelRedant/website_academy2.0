@@ -384,8 +384,9 @@ Kern van de leerervaring migreren zonder regressies in account- en toegangsflows
 - [x] Bestaande les kunnen aanpassen.
 - [x] Les kunnen deactiveren/verwijderen (met veilige fallback).
 - [x] Categorieen en tags beheren via admin.
+- [x] Koppelingen per categorie/tag beheren in admin (zoeken, toevoegen, uitzetten, veilige verwijdering).
 - [x] Publicatiestatus beheren (`draft`, `published`, `archived`).
-- [x] Wijzigingen valideren met rol/permissies (admin-only backend).
+- [x] Wijzigingen valideren met rol/permissies (rolgestuurde backendtoegang voor toegelaten rollen).
 
 ### Certificaten
 

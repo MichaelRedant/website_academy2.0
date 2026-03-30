@@ -1,0 +1,198 @@
+{
+    "generated_at": "2026-03-23T13:34:55+00:00",
+    "mode": "report-only",
+    "write_enabled": false,
+    "timeout_seconds": 5,
+    "limit": 2,
+    "counts": {
+        "courses_scanned": 2,
+        "courses_fetched": 0,
+        "courses_imported": 0,
+        "lessons_scanned": 2,
+        "lessons_fetched": 0,
+        "lessons_imported": 0,
+        "missing_items": 20
+    },
+    "inventory": {
+        "courses": [
+            {
+                "nl_slug": "coda",
+                "nl_url": "https://academy.octopus.be/nl/Cursussen/coda/",
+                "fr_url": "https://academy.octopus.be/fr/Cursussen/coda/",
+                "http_status": 0,
+                "ok": false,
+                "title": null,
+                "slug": null,
+                "summary": null,
+                "imported": false,
+                "course_id": null
+            },
+            {
+                "nl_slug": "documenten-doorsturen-via-dms",
+                "nl_url": "https://academy.octopus.be/nl/Cursussen/documenten-doorsturen-via-dms/",
+                "fr_url": "https://academy.octopus.be/fr/Cursussen/documenten-doorsturen-via-dms/",
+                "http_status": 0,
+                "ok": false,
+                "title": null,
+                "slug": null,
+                "summary": null,
+                "imported": false,
+                "course_id": null
+            }
+        ],
+        "lessons": [
+            {
+                "nl_course_slug": "lijsten-in-octopus",
+                "nl_lesson_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+                "nl_url": "https://academy.octopus.be/nl/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+                "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+                "http_status": 0,
+                "ok": false,
+                "title": null,
+                "slug": null,
+                "video_url": null,
+                "imported": false,
+                "lesson_id": null
+            },
+            {
+                "nl_course_slug": "klantenportaal",
+                "nl_lesson_slug": "aankoopfacturen",
+                "nl_url": "https://academy.octopus.be/nl/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+                "fr_url": "https://academy.octopus.be/fr/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+                "http_status": 0,
+                "ok": false,
+                "title": null,
+                "slug": null,
+                "video_url": null,
+                "imported": false,
+                "lesson_id": null
+            }
+        ]
+    },
+    "missing": [
+        {
+            "type": "course",
+            "nl_slug": "coda",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/coda/",
+            "reason": "FR pagina niet bereikbaar (HTTP 0)."
+        },
+        {
+            "type": "course",
+            "nl_slug": "coda",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/coda/",
+            "reason": "Geen gekoppelde cursus gevonden in lokale databank."
+        },
+        {
+            "type": "course",
+            "nl_slug": "coda",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/coda/",
+            "reason": "FR titel ontbreekt (h1 niet gevonden)."
+        },
+        {
+            "type": "course",
+            "nl_slug": "coda",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/coda/",
+            "reason": "FR slug ontbreekt."
+        },
+        {
+            "type": "course",
+            "nl_slug": "documenten-doorsturen-via-dms",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/documenten-doorsturen-via-dms/",
+            "reason": "FR pagina niet bereikbaar (HTTP 0)."
+        },
+        {
+            "type": "course",
+            "nl_slug": "documenten-doorsturen-via-dms",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/documenten-doorsturen-via-dms/",
+            "reason": "Geen gekoppelde cursus gevonden in lokale databank."
+        },
+        {
+            "type": "course",
+            "nl_slug": "documenten-doorsturen-via-dms",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/documenten-doorsturen-via-dms/",
+            "reason": "FR titel ontbreekt (h1 niet gevonden)."
+        },
+        {
+            "type": "course",
+            "nl_slug": "documenten-doorsturen-via-dms",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/documenten-doorsturen-via-dms/",
+            "reason": "FR slug ontbreekt."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+            "reason": "FR lespagina niet bereikbaar (HTTP 0)."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+            "reason": "Geen gekoppelde cursus gevonden in lokale databank."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+            "reason": "Geen gekoppelde les gevonden in lokale databank."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+            "reason": "FR lestitel ontbreekt (h1 niet gevonden)."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+            "reason": "FR lesslug ontbreekt."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aangiftes-btw-btw-listing-en-ic-listing",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/lijsten-in-octopus/lessons/aangiftes-btw-btw-listing-en-ic-listing/",
+            "reason": "FR videolink niet gevonden (best effort)."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aankoopfacturen",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+            "reason": "FR lespagina niet bereikbaar (HTTP 0)."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aankoopfacturen",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+            "reason": "Geen gekoppelde cursus gevonden in lokale databank."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aankoopfacturen",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+            "reason": "Geen gekoppelde les gevonden in lokale databank."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aankoopfacturen",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+            "reason": "FR lestitel ontbreekt (h1 niet gevonden)."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aankoopfacturen",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+            "reason": "FR lesslug ontbreekt."
+        },
+        {
+            "type": "lesson",
+            "nl_slug": "aankoopfacturen",
+            "fr_url": "https://academy.octopus.be/fr/Cursussen/klantenportaal/lessons/aankoopfacturen/",
+            "reason": "FR videolink niet gevonden (best effort)."
+        }
+    ],
+    "paths": {
+        "json": "",
+        "markdown": ""
+    }
+}
